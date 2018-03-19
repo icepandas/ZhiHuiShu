@@ -23,7 +23,9 @@ $(function(){
         var left_senconds = (parseInt(hour) * 60 * 60 + parseInt(minute) * 60 + parseInt(senconds)) * left_percentage;
 
         console.info("本集剩余秒数:",left_senconds);
-
+        $("div.speedTab15").trigger("click");
+	    $("b.line1bq").trigger("click");
+	    if($('div').hasClass('volumeBox');){$("div.volumeIcon").trigger("click");}
         setTimeout(function(){
             console.info("开始下一集");
             $next_li.trigger("click");
